@@ -95,7 +95,6 @@ export const VideoEmbedConfig: PlaygroundEmbedConfig<{
     width?: number;
     height?: number;
   }>) => {
-    console.log('inert w', result.data)
     editor.dispatchCommand(INSERT_VIDEO_COMMAND, {
       url: result.url,
       width: result.data?.width,

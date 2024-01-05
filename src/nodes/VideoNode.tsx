@@ -124,8 +124,8 @@ export class VideoNode extends DecoratorBlockNode {
   exportDOM(): DOMExportOutput {
     const element = document.createElement("video");
     element.setAttribute("data-lexical-Video", this.__src);
-    // element.setAttribute("width", "560");
-    // element.setAttribute("height", "315");
+    element.setAttribute("width", this.__width.toString());
+    element.setAttribute("height", this.__height.toString());
     element.setAttribute(
       "src",
       this.__src
